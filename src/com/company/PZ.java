@@ -14,6 +14,7 @@ public class PZ {
         for (int i = 0; i<najmanjiNiz.length;i++){
             najmanjiNiz[i]= input.nextInt();
         }
+        for (int i = 9; i > 9999; i++);
 
         System.out.println("Najmanji index ovog niza je: "+ ZadatakNajmanjiElementUNizu.indexOfSmallestElement(najmanjiNiz));
 
