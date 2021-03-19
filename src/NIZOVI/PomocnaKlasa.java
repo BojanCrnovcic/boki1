@@ -14,8 +14,13 @@ public class PomocnaKlasa {
     }
 
 
-
+    public static void ispis(int[] merge) {
+        for (int i:merge
+             ) {
+            System.out.print(" "+i);
 
         }
+    }
+}
 
 
