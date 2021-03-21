@@ -1,23 +1,28 @@
 package com.company;
 
+import NIZOVI.PomocnaKlasa;
 import NIZOVI.ZadatakNajmanjiElementUNizu;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PZ {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        int [] lista = PomocnaKlasa.unesiNiz(6);
 
-        int [] najmanjiNiz = new int[10];
+        if (isSorted(lista)){
+            System.out.println("Lista je sortirana.");
+        }else System.out.println("Lista nije sortirana. ");
+    }
 
-        System.out.println("Unesite 10 elemenata u niz: ");
-        for (int i = 0; i<najmanjiNiz.length;i++){
-            najmanjiNiz[i]= input.nextInt();
+
+
+    public static boolean isSorted(int[] list){
+        for (int i = 0; i<list.length; i++){
+            Arrays.sort(list);
+            return true;
         }
-        for (int i = 9; i > 9999; i++);
-
-        System.out.println("Najmanji index ovog niza je: "+ ZadatakNajmanjiElementUNizu.indexOfSmallestElement(najmanjiNiz));
-
+        return false;
     }
 }
 
