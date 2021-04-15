@@ -11,8 +11,8 @@ public class ValidacijaSifre {
             System.out.println("Sifra je pogresna. Nema dovoljno karaktera.");
             return false; }
 
-        if (Character.isLetterOrDigit(sifra.length())) {
-            System.out.println("Sifra je pogresna. Posjeduje nevazeci znak.");
+        if (!Character.isLetterOrDigit(sifra.length())) {
+            System.out.println("Sifra je pogresna. Posjeduje nevazeci znak.");}
 
 
         for (int i = 0; i<sifra.length();i++) {
@@ -27,11 +27,7 @@ public class ValidacijaSifre {
 
             }
 
-            }
 
-
-
-        System.out.println("Sifra je validna.");
         return true;
 
     }
